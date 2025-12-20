@@ -3,6 +3,8 @@
 import TestUseRef from "./13 December/TestUseRef";
 import About from "./14 December/About";
 import Home from "./14 December/Home";
+import TestControlled from "./20 December/TestControlled";
+import TestUnControlled from "./20 December/TestUnControlled";
 import "./App.css";
 
 export default function App() {
@@ -11,8 +13,10 @@ export default function App() {
       {/* <TestState /> */}
       {/* <TestUseEffect/> */}
       {/* <TestUseRef/> */}
-      <Home/>
+      {/* <Home/> */}
       {/* <About/> */}
+      {/* <TestControlled/> */}
+      <TestUnControlled/>
     </>
   );
 }
