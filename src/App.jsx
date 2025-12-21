@@ -1,11 +1,13 @@
 // import TestState from "./7 Decemver/TestState";
 // import TestUseEffect from "./13 December/TestUseEffect";
+import { RouterProvider } from "react-router";
 import TestUseRef from "./13 December/TestUseRef";
 import About from "./14 December/About";
 import Home from "./14 December/Home";
 import TestControlled from "./20 December/TestControlled";
 import TestUnControlled from "./20 December/TestUnControlled";
 import "./App.css";
+import { router } from "./router";
 
 export default function App() {
   return (
@@ -16,7 +18,8 @@ export default function App() {
       {/* <Home/> */}
       {/* <About/> */}
       {/* <TestControlled/> */}
-      <TestUnControlled/>
+      {/* <TestUnControlled/> */}
+      <RouterProvider router={router} />
     </>
   );
 }
