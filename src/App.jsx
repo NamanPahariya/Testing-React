@@ -8,8 +8,10 @@ import TestControlled from "./20 December/TestControlled";
 import TestUnControlled from "./20 December/TestUnControlled";
 import "./App.css";
 import { router } from "./router";
+import Parent from "./27 December/Parent";
 
 export default function App() {
+  // const userName = "Naman"
   return (
     <>
       {/* <TestState /> */}
@@ -19,7 +21,8 @@ export default function App() {
       {/* <About/> */}
       {/* <TestControlled/> */}
       {/* <TestUnControlled/> */}
-      <RouterProvider router={router} />
+      {/* <RouterProvider router={router} /> */}
+      <Parent userName={userName}/>
     </>
   );
 }
