@@ -8,10 +8,12 @@ import TestControlled from "./20 December/TestControlled";
 import TestUnControlled from "./20 December/TestUnControlled";
 import "./App.css";
 import { router } from "./router";
-import Parent from "./27 December/Parent";
+// import Parent from "./27 December/Parent";
+// import UserContext from "./UserContext";
+import TestMemo from "./27 December/TestMemo";
 
 export default function App() {
-  // const userName = "Naman"
+  const isAuthenticated = true;
   return (
     <>
       {/* <TestState /> */}
@@ -22,7 +24,11 @@ export default function App() {
       {/* <TestControlled/> */}
       {/* <TestUnControlled/> */}
       {/* <RouterProvider router={router} /> */}
-      <Parent userName={userName}/>
+      {/* <UserContext.Provider value={isAuthenticated}>
+      <Parent/>
+      </UserContext.Provider> */}
+
+      <TestMemo/>
     </>
   );
 }

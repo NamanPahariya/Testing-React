@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import UserContext from '../UserContext'
 
 const Child = () => {
-    const userName = "Naman"
+    const userName = useContext(UserContext)
   return (
     <div>
       Child Component : {userName}

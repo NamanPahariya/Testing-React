@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Child from './Child'
+import UserContext from '../UserContext'
 
-const Parent = ({userName}) => {
+const Parent = () => {
+    const isAuthenticated = useContext(UserContext);
   return (
     <div>
         Parent Component
-      <Child userName={userName}/>
+     { isAuthenticated && <Child/> }
     </div>
   )
 }
